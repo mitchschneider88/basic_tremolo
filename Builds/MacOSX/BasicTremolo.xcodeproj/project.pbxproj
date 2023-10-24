@@ -1,0 +1,2069 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		B464571C120225BE3327F3A0 /* BasicTremolo - All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B9157514E68911F6766C5A20;
+			buildPhases = (
+			);
+			dependencies = (
+				F486A98AF2E2F700FD2A39D9,
+				029E781D5D8FD585A7D8BA04,
+				C2E5141DBE6D0D15B1EAD993,
+				E701ED30F456985ED39DF606,
+				DEA01132E89A8D16913BA0B8,
+			);
+			name = "BasicTremolo - All";
+			productName = BasicTremolo;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		03B9E62D70C2A13EFF815294 /* Shared Code */ = {isa = PBXBuildFile; fileRef = 4BBB9C2938A932E6607AA0AB; };
+		0B07BEBB8A6DF65B6A82B07E /* CoreMIDI.framework */ = {isa = PBXBuildFile; fileRef = F79D605CDF6031133308E4FF; };
+		15B9BF9D06D67324B69FF351 /* IOKit.framework */ = {isa = PBXBuildFile; fileRef = D3C1AEF7D04A9FE3350E02B2; };
+		17667CD9FBBA1E65E9517431 /* include_juce_audio_utils.mm */ = {isa = PBXBuildFile; fileRef = DE7A355F0F3DE741BA120945; };
+		1BBCC6E19900B2207322B06D /* CoreAudio.framework */ = {isa = PBXBuildFile; fileRef = 0137DD5BC7FF1C11E6BC2184; };
+		247578652D49710854319815 /* VST3 */ = {isa = PBXBuildFile; fileRef = EDE86DFE17EE04B3FC2F5DBD; };
+		247BAC19EE212ABF3024FFBF /* include_juce_audio_processors.mm */ = {isa = PBXBuildFile; fileRef = 06840B309359FD3F29DDD62A; };
+		2BFC45DFB4D03D76267F14FD /* include_juce_audio_plugin_client_Standalone.cpp */ = {isa = PBXBuildFile; fileRef = 24AAC4BFCF6607582CDC5C5B; };
+		348EB815BCA2E04985701526 /* Foundation.framework */ = {isa = PBXBuildFile; fileRef = 7405DD865E3FFBEFB01999AE; };
+		367945D78A86612D02420567 /* include_juce_audio_plugin_client_AU_1.mm */ = {isa = PBXBuildFile; fileRef = B60B262CFB09813AFFF155A2; };
+		4208651D82232B13300E5C0C /* include_juce_core.mm */ = {isa = PBXBuildFile; fileRef = 144CC07C65ADDD3479A41E6C; };
+		4BBEB2283544C5486E101659 /* RecentFilesMenuTemplate.nib */ = {isa = PBXBuildFile; fileRef = 12EFE023DB6DD2B96A98CF41; };
+		4C083434234FA2F5A020DB73 /* AudioUnit.framework */ = {isa = PBXBuildFile; fileRef = 2E732C44C969D5C5F8BD0B27; };
+		4D5033CB16E7318241CFD036 /* DiscRecording.framework */ = {isa = PBXBuildFile; fileRef = EA07C738DC8C02482DE1B00D; };
+		4EB5383811E6188AF9AEA6B2 /* include_juce_graphics.mm */ = {isa = PBXBuildFile; fileRef = C3CAC3118B219AC4B545A90A; };
+		539836A184794C9E0B7179C8 /* include_juce_dsp.mm */ = {isa = PBXBuildFile; fileRef = 1AA0AF58D0E28D9BCE8C86C3; };
+		54496A597AC906A9965D8A86 /* include_juce_gui_basics.mm */ = {isa = PBXBuildFile; fileRef = 9DDF74EBD23DDE2E55FCC037; };
+		571A8F66E34506C82972A0E2 /* CoreAudioKit.framework */ = {isa = PBXBuildFile; fileRef = 1656380BA3478E1518FDA799; };
+		61D1E6FF5637A34F26AB391D /* include_juce_gui_extra.mm */ = {isa = PBXBuildFile; fileRef = 0D936A84DD19DE82B259EBBF; };
+		6AF9FC2E2E912B0D0C799754 /* include_juce_audio_formats.mm */ = {isa = PBXBuildFile; fileRef = E5BBF51CAFE597D796C50BAA; };
+		6ED2EF5D744EEE404A0D3B80 /* include_juce_audio_processors_lv2_libs.cpp */ = {isa = PBXBuildFile; fileRef = 41503AEAE1F6F7A12753443D; };
+		72398171BF28487F4324F9CF /* include_juce_audio_basics.mm */ = {isa = PBXBuildFile; fileRef = BE92AF6FF8775188E5A45EF3; };
+		755FA325644B7BD8E56752ED /* include_juce_data_structures.mm */ = {isa = PBXBuildFile; fileRef = 13D33751EC22C3A99EC12862; };
+		7BD44B5580EE1A3A759E1192 /* AU */ = {isa = PBXBuildFile; fileRef = E2D6A6F57696F056EFE59192; };
+		81500859A14D6CC04A94E933 /* include_juce_audio_plugin_client_VST3.mm */ = {isa = PBXBuildFile; fileRef = 0564B380C30E9179BCA601F5; };
+		9063D611EDA527A090404BF1 /* WebKit.framework */ = {isa = PBXBuildFile; fileRef = 201EFB1618530E3BB8811AB7; };
+		9426CFCD684C57F9E05116B3 /* Cocoa.framework */ = {isa = PBXBuildFile; fileRef = 063CAB56C5A7495D951EDC77; };
+		9564149783F6C0FBC9F9682B /* AudioToolbox.framework */ = {isa = PBXBuildFile; fileRef = 2A336989A40DC161A8CF3618; };
+		A0A7AFEB386F04E898E1A834 /* QuartzCore.framework */ = {isa = PBXBuildFile; fileRef = B623D1F10CE9E2FF75A96B3B; };
+		A407A698CA16982E389B6012 /* include_juce_audio_plugin_client_ARA.cpp */ = {isa = PBXBuildFile; fileRef = A5B564A2DC1AD22A69B8217D; };
+		AF4EFD314F17B94B30378B2C /* juce_VST3ManifestHelper.mm */ = {isa = PBXBuildFile; fileRef = 8470597038CD921BE388C4EE; settings = { COMPILER_FLAGS = "-std=c++17 -fobjc-arc -w -DJUCE_SKIP_PRECOMPILED_HEADER"; }; };
+		B51F2663BE49C9E07540AD93 /* include_juce_events.mm */ = {isa = PBXBuildFile; fileRef = 0470E7B4D7FDCD1217A72D6C; };
+		BA857B79A3C45BDF8937F0C0 /* include_juce_audio_plugin_client_AU_2.mm */ = {isa = PBXBuildFile; fileRef = C158B56EB49813E675DC41F3; };
+		CE83A11312B7B0A4C9F126E8 /* include_juce_audio_devices.mm */ = {isa = PBXBuildFile; fileRef = 0A745DCE1FC74DC2B3261723; };
+		D616F4C4C58E2F795B7A3DF7 /* Accelerate.framework */ = {isa = PBXBuildFile; fileRef = 05167CF7BACE222AFD96353B; };
+		DB14E24E3DBE493B2829FBE3 /* PluginEditor.cpp */ = {isa = PBXBuildFile; fileRef = 45F5D14852BF270F2F28B74B; };
+		E57151E60FB4666FD8EEBAF4 /* VST3 Manifest Helper */ = {isa = PBXBuildFile; fileRef = 091EFFF6C33CD4AD40ADA8CF; };
+		ECEEB1206F37785E7D10406D /* Security.framework */ = {isa = PBXBuildFile; fileRef = 0697E2540C32A177DBE64EA0; };
+		EFEA192761315809422A5E27 /* Standalone Plugin */ = {isa = PBXBuildFile; fileRef = 77790B4E571F8BDCF257D9E7; };
+		F4CEA7EC04CEA281509A2B3C /* include_juce_audio_processors_ara.cpp */ = {isa = PBXBuildFile; fileRef = 851C0A87A76FF4E9BA8414E9; };
+		F558C84C1D27F775765D1DF3 /* PluginProcessor.cpp */ = {isa = PBXBuildFile; fileRef = 893C873686320A9F5839671F; };
+		F96AA599D6E4B4407B79EF65 /* fxobjects_Schneider.cpp */ = {isa = PBXBuildFile; fileRef = 48B6967B9352B3FDF9103A5C; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0137DD5BC7FF1C11E6BC2184 /* CoreAudio.framework */ /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		0470E7B4D7FDCD1217A72D6C /* include_juce_events.mm */ /* include_juce_events.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_events.mm; path = ../../JuceLibraryCode/include_juce_events.mm; sourceTree = SOURCE_ROOT; };
+		05167CF7BACE222AFD96353B /* Accelerate.framework */ /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		0564B380C30E9179BCA601F5 /* include_juce_audio_plugin_client_VST3.mm */ /* include_juce_audio_plugin_client_VST3.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_plugin_client_VST3.mm; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_VST3.mm; sourceTree = SOURCE_ROOT; };
+		063CAB56C5A7495D951EDC77 /* Cocoa.framework */ /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		06672F089926FEA1BF1D9311 /* filters_Schneider.h */ /* filters_Schneider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = filters_Schneider.h; path = ../../../fxobjects_Schneider/filters_Schneider.h; sourceTree = SOURCE_ROOT; };
+		06840B309359FD3F29DDD62A /* include_juce_audio_processors.mm */ /* include_juce_audio_processors.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_processors.mm; path = ../../JuceLibraryCode/include_juce_audio_processors.mm; sourceTree = SOURCE_ROOT; };
+		0697E2540C32A177DBE64EA0 /* Security.framework */ /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		072169D53C04161B40073066 /* Info-AU.plist */ /* Info-AU.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-AU.plist"; path = "Info-AU.plist"; sourceTree = SOURCE_ROOT; };
+		091EFFF6C33CD4AD40ADA8CF /* VST3 Manifest Helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = juce_vst3_helper; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A745DCE1FC74DC2B3261723 /* include_juce_audio_devices.mm */ /* include_juce_audio_devices.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_devices.mm; path = ../../JuceLibraryCode/include_juce_audio_devices.mm; sourceTree = SOURCE_ROOT; };
+		0D936A84DD19DE82B259EBBF /* include_juce_gui_extra.mm */ /* include_juce_gui_extra.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_extra.mm; path = ../../JuceLibraryCode/include_juce_gui_extra.mm; sourceTree = SOURCE_ROOT; };
+		0DACDB0CDCEEDFE25066B0BA /* juce_audio_plugin_client */ /* juce_audio_plugin_client */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_plugin_client; path = "/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client"; sourceTree = "<absolute>"; };
+		12EFE023DB6DD2B96A98CF41 /* RecentFilesMenuTemplate.nib */ /* RecentFilesMenuTemplate.nib */ = {isa = PBXFileReference; lastKnownFileType = file.nib; name = RecentFilesMenuTemplate.nib; path = RecentFilesMenuTemplate.nib; sourceTree = SOURCE_ROOT; };
+		139FC43838A256A7C297AB13 /* Info-VST3.plist */ /* Info-VST3.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-VST3.plist"; path = "Info-VST3.plist"; sourceTree = SOURCE_ROOT; };
+		13D33751EC22C3A99EC12862 /* include_juce_data_structures.mm */ /* include_juce_data_structures.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_data_structures.mm; path = ../../JuceLibraryCode/include_juce_data_structures.mm; sourceTree = SOURCE_ROOT; };
+		140FFEAB81E4069869A403B0 /* juce_gui_extra */ /* juce_gui_extra */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_gui_extra; path = "/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_gui_extra"; sourceTree = "<absolute>"; };
+		144CC07C65ADDD3479A41E6C /* include_juce_core.mm */ /* include_juce_core.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_core.mm; path = ../../JuceLibraryCode/include_juce_core.mm; sourceTree = SOURCE_ROOT; };
+		14C124071A0BC2346A59CA96 /* juce_graphics */ /* juce_graphics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_graphics; path = "/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_graphics"; sourceTree = "<absolute>"; };
+		1656380BA3478E1518FDA799 /* CoreAudioKit.framework */ /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		18089C42DC1C42E84D2CFCD5 /* Info-Standalone_Plugin.plist */ /* Info-Standalone_Plugin.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-Standalone_Plugin.plist"; path = "Info-Standalone_Plugin.plist"; sourceTree = SOURCE_ROOT; };
+		1AA0AF58D0E28D9BCE8C86C3 /* include_juce_dsp.mm */ /* include_juce_dsp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_dsp.mm; path = ../../JuceLibraryCode/include_juce_dsp.mm; sourceTree = SOURCE_ROOT; };
+		201EFB1618530E3BB8811AB7 /* WebKit.framework */ /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		24AAC4BFCF6607582CDC5C5B /* include_juce_audio_plugin_client_Standalone.cpp */ /* include_juce_audio_plugin_client_Standalone.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_Standalone.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_Standalone.cpp; sourceTree = SOURCE_ROOT; };
+		270B5624EB04FEEFC5A4F6D1 /* juce_gui_basics */ /* juce_gui_basics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_gui_basics; path = "/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_gui_basics"; sourceTree = "<absolute>"; };
+		2A336989A40DC161A8CF3618 /* AudioToolbox.framework */ /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2DDDC1EE60B1709CA0596865 /* JuceHeader.h */ /* JuceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JuceHeader.h; path = ../../JuceLibraryCode/JuceHeader.h; sourceTree = SOURCE_ROOT; };
+		2E732C44C969D5C5F8BD0B27 /* AudioUnit.framework */ /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		3B1AF80B2F538670747BDCBF /* juce_data_structures */ /* juce_data_structures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_data_structures; path = "/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_data_structures"; sourceTree = "<absolute>"; };
+		41503AEAE1F6F7A12753443D /* include_juce_audio_processors_lv2_libs.cpp */ /* include_juce_audio_processors_lv2_libs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_processors_lv2_libs.cpp; path = ../../JuceLibraryCode/include_juce_audio_processors_lv2_libs.cpp; sourceTree = SOURCE_ROOT; };
+		45F5D14852BF270F2F28B74B /* PluginEditor.cpp */ /* PluginEditor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PluginEditor.cpp; path = ../../Source/PluginEditor.cpp; sourceTree = SOURCE_ROOT; };
+		48B6967B9352B3FDF9103A5C /* fxobjects_Schneider.cpp */ /* fxobjects_Schneider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = fxobjects_Schneider.cpp; path = ../../../fxobjects_Schneider/fxobjects_Schneider.cpp; sourceTree = SOURCE_ROOT; };
+		4BBB9C2938A932E6607AA0AB /* Shared Code */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBasicTremolo.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		651125B35070CC23BE2DFE96 /* fxobjects_Schneider.h */ /* fxobjects_Schneider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fxobjects_Schneider.h; path = ../../../fxobjects_Schneider/fxobjects_Schneider.h; sourceTree = SOURCE_ROOT; };
+		6AAB40D8843B8EE87D083F79 /* juce_events */ /* juce_events */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_events; path = "/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_events"; sourceTree = "<absolute>"; };
+		708DB6F7FD6E0CAA61DC0846 /* juce_core */ /* juce_core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_core; path = "/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_core"; sourceTree = "<absolute>"; };
+		7405DD865E3FFBEFB01999AE /* Foundation.framework */ /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7436CB2794AA5C9D3A0FDE97 /* PluginProcessor.h */ /* PluginProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PluginProcessor.h; path = ../../Source/PluginProcessor.h; sourceTree = SOURCE_ROOT; };
+		761C055667F67AA365A47D51 /* juce_audio_utils */ /* juce_audio_utils */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_utils; path = "/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_utils"; sourceTree = "<absolute>"; };
+		77790B4E571F8BDCF257D9E7 /* Standalone Plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicTremolo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E7A3174F52936A3381D1357 /* juce_audio_basics */ /* juce_audio_basics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_basics; path = "/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_basics"; sourceTree = "<absolute>"; };
+		7F4BDB37A8A06FB0AC714A75 /* juce_dsp */ /* juce_dsp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_dsp; path = "/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_dsp"; sourceTree = "<absolute>"; };
+		8470597038CD921BE388C4EE /* juce_VST3ManifestHelper.mm */ /* juce_VST3ManifestHelper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = juce_VST3ManifestHelper.mm; path = "/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/VST3/juce_VST3ManifestHelper.mm"; sourceTree = "<absolute>"; };
+		851C0A87A76FF4E9BA8414E9 /* include_juce_audio_processors_ara.cpp */ /* include_juce_audio_processors_ara.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_processors_ara.cpp; path = ../../JuceLibraryCode/include_juce_audio_processors_ara.cpp; sourceTree = SOURCE_ROOT; };
+		87C7F8EA10C98F83E793BFCB /* Info-VST3_Manifest_Helper.plist */ /* Info-VST3_Manifest_Helper.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-VST3_Manifest_Helper.plist"; path = "Info-VST3_Manifest_Helper.plist"; sourceTree = SOURCE_ROOT; };
+		88B7F187C976506A7DB58F4B /* juce_audio_formats */ /* juce_audio_formats */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_formats; path = "/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_formats"; sourceTree = "<absolute>"; };
+		893C873686320A9F5839671F /* PluginProcessor.cpp */ /* PluginProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PluginProcessor.cpp; path = ../../Source/PluginProcessor.cpp; sourceTree = SOURCE_ROOT; };
+		9DDF74EBD23DDE2E55FCC037 /* include_juce_gui_basics.mm */ /* include_juce_gui_basics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_basics.mm; path = ../../JuceLibraryCode/include_juce_gui_basics.mm; sourceTree = SOURCE_ROOT; };
+		A22DB60D893BA354C5C7F59A /* juce_audio_processors */ /* juce_audio_processors */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_processors; path = "/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors"; sourceTree = "<absolute>"; };
+		A5B564A2DC1AD22A69B8217D /* include_juce_audio_plugin_client_ARA.cpp */ /* include_juce_audio_plugin_client_ARA.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_ARA.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_ARA.cpp; sourceTree = SOURCE_ROOT; };
+		B46A421E8C7E4BF4F4A910C0 /* PluginEditor.h */ /* PluginEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PluginEditor.h; path = ../../Source/PluginEditor.h; sourceTree = SOURCE_ROOT; };
+		B60B262CFB09813AFFF155A2 /* include_juce_audio_plugin_client_AU_1.mm */ /* include_juce_audio_plugin_client_AU_1.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_plugin_client_AU_1.mm; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_AU_1.mm; sourceTree = SOURCE_ROOT; };
+		B623D1F10CE9E2FF75A96B3B /* QuartzCore.framework */ /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BE92AF6FF8775188E5A45EF3 /* include_juce_audio_basics.mm */ /* include_juce_audio_basics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_basics.mm; path = ../../JuceLibraryCode/include_juce_audio_basics.mm; sourceTree = SOURCE_ROOT; };
+		C158B56EB49813E675DC41F3 /* include_juce_audio_plugin_client_AU_2.mm */ /* include_juce_audio_plugin_client_AU_2.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_plugin_client_AU_2.mm; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_AU_2.mm; sourceTree = SOURCE_ROOT; };
+		C3CAC3118B219AC4B545A90A /* include_juce_graphics.mm */ /* include_juce_graphics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_graphics.mm; path = ../../JuceLibraryCode/include_juce_graphics.mm; sourceTree = SOURCE_ROOT; };
+		C94FC7F5963A36B51E910C54 /* guiconstants.h */ /* guiconstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = guiconstants.h; path = ../../../fxobjects_Schneider/guiconstants.h; sourceTree = SOURCE_ROOT; };
+		CB86AEB7E2C0C767CB750B41 /* juce_audio_devices */ /* juce_audio_devices */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_devices; path = "/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_devices"; sourceTree = "<absolute>"; };
+		D2422B1AD5334DAF18D5BD61 /* JucePluginDefines.h */ /* JucePluginDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JucePluginDefines.h; path = ../../JuceLibraryCode/JucePluginDefines.h; sourceTree = SOURCE_ROOT; };
+		D3C1AEF7D04A9FE3350E02B2 /* IOKit.framework */ /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		DE7A355F0F3DE741BA120945 /* include_juce_audio_utils.mm */ /* include_juce_audio_utils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_utils.mm; path = ../../JuceLibraryCode/include_juce_audio_utils.mm; sourceTree = SOURCE_ROOT; };
+		E2D6A6F57696F056EFE59192 /* AU */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicTremolo.component; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5BBF51CAFE597D796C50BAA /* include_juce_audio_formats.mm */ /* include_juce_audio_formats.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_formats.mm; path = ../../JuceLibraryCode/include_juce_audio_formats.mm; sourceTree = SOURCE_ROOT; };
+		EA07C738DC8C02482DE1B00D /* DiscRecording.framework */ /* DiscRecording.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiscRecording.framework; path = System/Library/Frameworks/DiscRecording.framework; sourceTree = SDKROOT; };
+		EDE86DFE17EE04B3FC2F5DBD /* VST3 */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicTremolo.vst3; sourceTree = BUILT_PRODUCTS_DIR; };
+		F79D605CDF6031133308E4FF /* CoreMIDI.framework */ /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29FEC3A6DFC3D91E9E83627F = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D616F4C4C58E2F795B7A3DF7,
+				9564149783F6C0FBC9F9682B,
+				9426CFCD684C57F9E05116B3,
+				1BBCC6E19900B2207322B06D,
+				571A8F66E34506C82972A0E2,
+				0B07BEBB8A6DF65B6A82B07E,
+				4D5033CB16E7318241CFD036,
+				348EB815BCA2E04985701526,
+				15B9BF9D06D67324B69FF351,
+				A0A7AFEB386F04E898E1A834,
+				ECEEB1206F37785E7D10406D,
+				9063D611EDA527A090404BF1,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		592CF0F7A97D584DA1D29A78 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C083434234FA2F5A020DB73,
+				D616F4C4C58E2F795B7A3DF7,
+				9564149783F6C0FBC9F9682B,
+				9426CFCD684C57F9E05116B3,
+				1BBCC6E19900B2207322B06D,
+				571A8F66E34506C82972A0E2,
+				0B07BEBB8A6DF65B6A82B07E,
+				4D5033CB16E7318241CFD036,
+				348EB815BCA2E04985701526,
+				15B9BF9D06D67324B69FF351,
+				A0A7AFEB386F04E898E1A834,
+				ECEEB1206F37785E7D10406D,
+				9063D611EDA527A090404BF1,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		958E2700346BC3BF7A18EB21 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D616F4C4C58E2F795B7A3DF7,
+				9564149783F6C0FBC9F9682B,
+				9426CFCD684C57F9E05116B3,
+				1BBCC6E19900B2207322B06D,
+				571A8F66E34506C82972A0E2,
+				0B07BEBB8A6DF65B6A82B07E,
+				4D5033CB16E7318241CFD036,
+				348EB815BCA2E04985701526,
+				15B9BF9D06D67324B69FF351,
+				A0A7AFEB386F04E898E1A834,
+				ECEEB1206F37785E7D10406D,
+				9063D611EDA527A090404BF1,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBC5585101B07BFED5A27B0E = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D616F4C4C58E2F795B7A3DF7,
+				9564149783F6C0FBC9F9682B,
+				9426CFCD684C57F9E05116B3,
+				1BBCC6E19900B2207322B06D,
+				571A8F66E34506C82972A0E2,
+				0B07BEBB8A6DF65B6A82B07E,
+				4D5033CB16E7318241CFD036,
+				348EB815BCA2E04985701526,
+				15B9BF9D06D67324B69FF351,
+				A0A7AFEB386F04E898E1A834,
+				ECEEB1206F37785E7D10406D,
+				9063D611EDA527A090404BF1,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E0725DB76C6A9D43AF095AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDE86DFE17EE04B3FC2F5DBD,
+				E2D6A6F57696F056EFE59192,
+				77790B4E571F8BDCF257D9E7,
+				4BBB9C2938A932E6607AA0AB,
+				091EFFF6C33CD4AD40ADA8CF,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46A343365ED472C9D42F1B02 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				06672F089926FEA1BF1D9311,
+				48B6967B9352B3FDF9103A5C,
+				651125B35070CC23BE2DFE96,
+				C94FC7F5963A36B51E910C54,
+				893C873686320A9F5839671F,
+				7436CB2794AA5C9D3A0FDE97,
+				45F5D14852BF270F2F28B74B,
+				B46A421E8C7E4BF4F4A910C0,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		4FA1EEB9F619E90606717229 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				93A2D2013B642C763D010B2B,
+				AD0EA17794273B47015ACCC1,
+				ABBDC8C0A53B80BAD703C4A7,
+				970228CBC6129D09C6A719D7,
+				CB390C4FA44D989607AF2026,
+				2E0725DB76C6A9D43AF095AD,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		93A2D2013B642C763D010B2B /* BasicTremolo */ = {
+			isa = PBXGroup;
+			children = (
+				46A343365ED472C9D42F1B02,
+			);
+			name = BasicTremolo;
+			sourceTree = "<group>";
+		};
+		970228CBC6129D09C6A719D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				139FC43838A256A7C297AB13,
+				072169D53C04161B40073066,
+				18089C42DC1C42E84D2CFCD5,
+				87C7F8EA10C98F83E793BFCB,
+				12EFE023DB6DD2B96A98CF41,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		ABBDC8C0A53B80BAD703C4A7 /* JUCE Library Code */ = {
+			isa = PBXGroup;
+			children = (
+				BE92AF6FF8775188E5A45EF3,
+				0A745DCE1FC74DC2B3261723,
+				E5BBF51CAFE597D796C50BAA,
+				A5B564A2DC1AD22A69B8217D,
+				B60B262CFB09813AFFF155A2,
+				C158B56EB49813E675DC41F3,
+				24AAC4BFCF6607582CDC5C5B,
+				0564B380C30E9179BCA601F5,
+				06840B309359FD3F29DDD62A,
+				851C0A87A76FF4E9BA8414E9,
+				41503AEAE1F6F7A12753443D,
+				DE7A355F0F3DE741BA120945,
+				144CC07C65ADDD3479A41E6C,
+				13D33751EC22C3A99EC12862,
+				1AA0AF58D0E28D9BCE8C86C3,
+				0470E7B4D7FDCD1217A72D6C,
+				C3CAC3118B219AC4B545A90A,
+				9DDF74EBD23DDE2E55FCC037,
+				0D936A84DD19DE82B259EBBF,
+				2DDDC1EE60B1709CA0596865,
+				D2422B1AD5334DAF18D5BD61,
+			);
+			name = "JUCE Library Code";
+			sourceTree = "<group>";
+		};
+		AD0EA17794273B47015ACCC1 /* JUCE Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7E7A3174F52936A3381D1357,
+				CB86AEB7E2C0C767CB750B41,
+				88B7F187C976506A7DB58F4B,
+				0DACDB0CDCEEDFE25066B0BA,
+				A22DB60D893BA354C5C7F59A,
+				761C055667F67AA365A47D51,
+				708DB6F7FD6E0CAA61DC0846,
+				3B1AF80B2F538670747BDCBF,
+				7F4BDB37A8A06FB0AC714A75,
+				6AAB40D8843B8EE87D083F79,
+				14C124071A0BC2346A59CA96,
+				270B5624EB04FEEFC5A4F6D1,
+				140FFEAB81E4069869A403B0,
+			);
+			name = "JUCE Modules";
+			sourceTree = "<group>";
+		};
+		CB390C4FA44D989607AF2026 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E732C44C969D5C5F8BD0B27,
+				05167CF7BACE222AFD96353B,
+				2A336989A40DC161A8CF3618,
+				063CAB56C5A7495D951EDC77,
+				0137DD5BC7FF1C11E6BC2184,
+				1656380BA3478E1518FDA799,
+				F79D605CDF6031133308E4FF,
+				EA07C738DC8C02482DE1B00D,
+				7405DD865E3FFBEFB01999AE,
+				D3C1AEF7D04A9FE3350E02B2,
+				B623D1F10CE9E2FF75A96B3B,
+				0697E2540C32A177DBE64EA0,
+				201EFB1618530E3BB8811AB7,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E707AE44A6507FB42DB22B3 /* BasicTremolo - AU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 005EDB34B99B15FE8A8943A4;
+			buildPhases = (
+				D623C391A2036A65830E841E,
+				1B9DBD2CFFF567A5359B67E6,
+				592CF0F7A97D584DA1D29A78,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F4C93D8EF7045EA802C11FA,
+			);
+			name = "BasicTremolo - AU";
+			productName = BasicTremolo;
+			productReference = E2D6A6F57696F056EFE59192;
+			productType = "com.apple.product-type.bundle";
+		};
+		9748364FBE97ED88EDBAA46F /* BasicTremolo - Standalone Plugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A12BA45D9422C1A88669AD64;
+			buildPhases = (
+				4705FB18E9529865798C058B,
+				042E0107C1BC62BD12DC6CC7,
+				29FEC3A6DFC3D91E9E83627F,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10E66DD7206B062101D13D02,
+			);
+			name = "BasicTremolo - Standalone Plugin";
+			productName = BasicTremolo;
+			productReference = 77790B4E571F8BDCF257D9E7;
+			productType = "com.apple.product-type.application";
+		};
+		C71A7E327894D29A52BE4C1B /* BasicTremolo - VST3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 169E879934B1BA1D7F7C74DB;
+			buildPhases = (
+				358232350AD9067493A87FF6,
+				1C6F3EA267EDCC9A6CA4BABD,
+				958E2700346BC3BF7A18EB21,
+				613AB72EE095C8EFA46D169F,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED141283EB603E26A6DD6B9E,
+				05BDD51AC16BF4936BE0D578,
+			);
+			name = "BasicTremolo - VST3";
+			productName = BasicTremolo;
+			productReference = EDE86DFE17EE04B3FC2F5DBD;
+			productType = "com.apple.product-type.bundle";
+		};
+		D53A23228C4A4DC33402AEE2 /* BasicTremolo - Shared Code */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 152394E2646004721F47FB8C;
+			buildPhases = (
+				C6239DD719D25D08C9EB08D7,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BasicTremolo - Shared Code";
+			productName = BasicTremolo;
+			productReference = 4BBB9C2938A932E6607AA0AB;
+			productType = "com.apple.product-type.library.static";
+		};
+		F043AEB2FC5430D85468DDE5 /* BasicTremolo - VST3 Manifest Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E105348B6578F49BE42F6D11;
+			buildPhases = (
+				77284B5185D1D56FF8A797B7,
+				BBC5585101B07BFED5A27B0E,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BasicTremolo - VST3 Manifest Helper";
+			productName = BasicTremolo;
+			productReference = 091EFFF6C33CD4AD40ADA8CF;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A4B3D498679FA2BC41E4D62 = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1340;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					2E707AE44A6507FB42DB22B3 = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					9748364FBE97ED88EDBAA46F = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					B464571C120225BE3327F3A0 = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					C71A7E327894D29A52BE4C1B = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					D53A23228C4A4DC33402AEE2 = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					F043AEB2FC5430D85468DDE5 = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 0ED8EB462D872B639F696143;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FA1EEB9F619E90606717229;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B464571C120225BE3327F3A0,
+				C71A7E327894D29A52BE4C1B,
+				2E707AE44A6507FB42DB22B3,
+				9748364FBE97ED88EDBAA46F,
+				D53A23228C4A4DC33402AEE2,
+				F043AEB2FC5430D85468DDE5,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		358232350AD9067493A87FF6 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBEB2283544C5486E101659,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4705FB18E9529865798C058B = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBEB2283544C5486E101659,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D623C391A2036A65830E841E = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BBEB2283544C5486E101659,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		613AB72EE095C8EFA46D169F /* Update manifest */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Update manifest";
+			alwaysOutOfDate = 1;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nrm -f \"$CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME/Contents/moduleinfo.json\"\nxcrun codesign --verify \"$CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME\" || xcrun codesign -f -s - \"$CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME\"\n\"$CONFIGURATION_BUILD_DIR/juce_vst3_helper\" -create -version \"1.0.0\" -path \"$CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME\" -output \"$CONFIGURATION_BUILD_DIR/$FULL_PRODUCT_NAME/Contents/Resources/moduleinfo.json\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		042E0107C1BC62BD12DC6CC7 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BFC45DFB4D03D76267F14FD,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B9DBD2CFFF567A5359B67E6 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				367945D78A86612D02420567,
+				BA857B79A3C45BDF8937F0C0,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C6F3EA267EDCC9A6CA4BABD = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81500859A14D6CC04A94E933,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77284B5185D1D56FF8A797B7 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF4EFD314F17B94B30378B2C,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6239DD719D25D08C9EB08D7 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F96AA599D6E4B4407B79EF65,
+				F558C84C1D27F775765D1DF3,
+				DB14E24E3DBE493B2829FBE3,
+				72398171BF28487F4324F9CF,
+				CE83A11312B7B0A4C9F126E8,
+				6AF9FC2E2E912B0D0C799754,
+				A407A698CA16982E389B6012,
+				247BAC19EE212ABF3024FFBF,
+				F4CEA7EC04CEA281509A2B3C,
+				6ED2EF5D744EEE404A0D3B80,
+				17667CD9FBBA1E65E9517431,
+				4208651D82232B13300E5C0C,
+				755FA325644B7BD8E56752ED,
+				539836A184794C9E0B7179C8,
+				B51F2663BE49C9E07540AD93,
+				4EB5383811E6188AF9AEA6B2,
+				54496A597AC906A9965D8A86,
+				61D1E6FF5637A34F26AB391D,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		029E781D5D8FD585A7D8BA04 = {
+			isa = PBXTargetDependency;
+			target = 2E707AE44A6507FB42DB22B3;
+		};
+		05BDD51AC16BF4936BE0D578 = {
+			isa = PBXTargetDependency;
+			target = F043AEB2FC5430D85468DDE5;
+		};
+		10E66DD7206B062101D13D02 = {
+			isa = PBXTargetDependency;
+			target = D53A23228C4A4DC33402AEE2;
+		};
+		6F4C93D8EF7045EA802C11FA = {
+			isa = PBXTargetDependency;
+			target = D53A23228C4A4DC33402AEE2;
+		};
+		C2E5141DBE6D0D15B1EAD993 = {
+			isa = PBXTargetDependency;
+			target = 9748364FBE97ED88EDBAA46F;
+		};
+		DEA01132E89A8D16913BA0B8 = {
+			isa = PBXTargetDependency;
+			target = F043AEB2FC5430D85468DDE5;
+		};
+		E701ED30F456985ED39DF606 = {
+			isa = PBXTargetDependency;
+			target = D53A23228C4A4DC33402AEE2;
+		};
+		ED141283EB603E26A6DD6B9E = {
+			isa = PBXTargetDependency;
+			target = D53A23228C4A4DC33402AEE2;
+		};
+		F486A98AF2E2F700FD2A39D9 = {
+			isa = PBXTargetDependency;
+			target = C71A7E327894D29A52BE4C1B;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05DB1A74E9BA4DBEF2E5C03F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		19CD2562F42A959DB53837B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70006",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"BasicTremolo\\\"",
+					"JucePlugin_Desc=\\\"BasicTremolo\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x50677376",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=BasicTremoloAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"BasicTremoloAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ BasicTremolo\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.BasicTremolo.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.BasicTremolo.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\"",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\"",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\"",
+					"/Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-AU.plist;
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/Components/";
+				LIBRARY_STYLE = Bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\" \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\" $(SRCROOT)/../../JuceLibraryCode \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\" /Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"";
+				OTHER_LDFLAGS = "-bundle -lBasicTremolo -weak_framework Metal -weak_framework MetalKit";
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -d arm64_$arm64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.BasicTremolo;
+				PRODUCT_NAME = "BasicTremolo";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = component;
+			};
+			name = Debug;
+		};
+		1C6BAEF7CA007FD83D3F6769 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70006",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"BasicTremolo\\\"",
+					"JucePlugin_Desc=\\\"BasicTremolo\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x50677376",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=BasicTremoloAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"BasicTremoloAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ BasicTremolo\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.BasicTremolo.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.BasicTremolo.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\"",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\"",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\"",
+					"/Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-VST3.plist;
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/VST3/";
+				LIBRARY_STYLE = Bundle;
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\" \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\" $(SRCROOT)/../../JuceLibraryCode \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\" /Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"";
+				OTHER_LDFLAGS = "-bundle -lBasicTremolo -weak_framework Metal -weak_framework MetalKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.BasicTremolo;
+				PRODUCT_NAME = "BasicTremolo";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = vst3;
+			};
+			name = Release;
+		};
+		1FC3B1B175DFE94B4CA8B05B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70006",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=1",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"BasicTremolo\\\"",
+					"JucePlugin_Desc=\\\"BasicTremolo\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x50677376",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=BasicTremoloAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"BasicTremoloAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ BasicTremolo\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.BasicTremolo.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.BasicTremolo.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+					"JUCE_SHARED_CODE=1",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\"",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\"",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\"",
+					"/Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\" \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\" $(SRCROOT)/../../JuceLibraryCode \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\" /Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"";
+				OTHER_LDFLAGS = "-weak_framework Metal -weak_framework MetalKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.BasicTremolo;
+				PRODUCT_NAME = "BasicTremolo";
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Debug;
+		};
+		30C81225D6A56E106A115F61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70006",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"BasicTremolo\\\"",
+					"JucePlugin_Desc=\\\"BasicTremolo\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x50677376",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=BasicTremoloAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"BasicTremoloAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ BasicTremolo\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.BasicTremolo.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.BasicTremolo.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\"",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\"",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\"",
+					"/Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-VST3.plist;
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/VST3/";
+				LIBRARY_STYLE = Bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\" \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\" $(SRCROOT)/../../JuceLibraryCode \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\" /Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"";
+				OTHER_LDFLAGS = "-bundle -lBasicTremolo -weak_framework Metal -weak_framework MetalKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.BasicTremolo;
+				PRODUCT_NAME = "BasicTremolo";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = vst3;
+			};
+			name = Debug;
+		};
+		473FC907C9D7586CD602C03A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70006",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=1",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"BasicTremolo\\\"",
+					"JucePlugin_Desc=\\\"BasicTremolo\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x50677376",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=BasicTremoloAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"BasicTremoloAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ BasicTremolo\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.BasicTremolo.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.BasicTremolo.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\"",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\"",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\"",
+					"/Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-Standalone_Plugin.plist;
+				INFOPLIST_PREPROCESS = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\" \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\" $(SRCROOT)/../../JuceLibraryCode \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\" /Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"";
+				OTHER_LDFLAGS = "-lBasicTremolo -weak_framework Metal -weak_framework MetalKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.BasicTremolo;
+				PRODUCT_NAME = "BasicTremolo";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Debug;
+		};
+		63D39C51E47FED272B10E007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70006",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=1",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"BasicTremolo\\\"",
+					"JucePlugin_Desc=\\\"BasicTremolo\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x50677376",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=BasicTremoloAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"BasicTremoloAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ BasicTremolo\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.BasicTremolo.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.BasicTremolo.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\"",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\"",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\"",
+					"/Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-Standalone_Plugin.plist;
+				INFOPLIST_PREPROCESS = NO;
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\" \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\" $(SRCROOT)/../../JuceLibraryCode \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\" /Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"";
+				OTHER_LDFLAGS = "-lBasicTremolo -weak_framework Metal -weak_framework MetalKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.BasicTremolo;
+				PRODUCT_NAME = "BasicTremolo";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Release;
+		};
+		69D2CEED8C5FD1D796B02A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70006",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=1",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"BasicTremolo\\\"",
+					"JucePlugin_Desc=\\\"BasicTremolo\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x50677376",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=BasicTremoloAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"BasicTremoloAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ BasicTremolo\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.BasicTremolo.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.BasicTremolo.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+					"JUCE_SHARED_CODE=1",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\"",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\"",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\"",
+					"/Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\" \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\" $(SRCROOT)/../../JuceLibraryCode \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\" /Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"";
+				OTHER_LDFLAGS = "-weak_framework Metal -weak_framework MetalKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.BasicTremolo;
+				PRODUCT_NAME = "BasicTremolo";
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Release;
+		};
+		7482757582C48BA21CC565E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70006",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"BasicTremolo\\\"",
+					"JucePlugin_Desc=\\\"BasicTremolo\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x50677376",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=BasicTremoloAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"BasicTremoloAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ BasicTremolo\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.BasicTremolo.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.BasicTremolo.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\"",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\"",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\"",
+					"/Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-AU.plist;
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/Components/";
+				LIBRARY_STYLE = Bundle;
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\" \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\" $(SRCROOT)/../../JuceLibraryCode \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\" /Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"";
+				OTHER_LDFLAGS = "-bundle -lBasicTremolo -weak_framework Metal -weak_framework MetalKit";
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -d arm64_$arm64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.BasicTremolo;
+				PRODUCT_NAME = "BasicTremolo";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = component;
+			};
+			name = Release;
+		};
+		750FB9810E08EEB539A2BB92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70006",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"BasicTremolo\\\"",
+					"JucePlugin_Desc=\\\"BasicTremolo\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x50677376",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=BasicTremoloAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"BasicTremoloAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ BasicTremolo\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.BasicTremolo.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.BasicTremolo.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\"",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\"",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\"",
+					"/Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-VST3_Manifest_Helper.plist;
+				INFOPLIST_PREPROCESS = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\" \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\" $(SRCROOT)/../../JuceLibraryCode \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\" /Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"";
+				OTHER_LDFLAGS = "-weak_framework Metal -weak_framework MetalKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.BasicTremolo;
+				PRODUCT_NAME = "juce_vst3_helper";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Debug;
+		};
+		7812E2AA13FAADB0304E126B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "BasicTremolo";
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wreorder";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		9959A4D2700BAE939A085933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_NAME = "BasicTremolo";
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wreorder";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		9F23F9DCF68DA1B8A248FA3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_DISPLAY_SPLASH_SCREEN=1",
+					"JUCE_USE_DARK_SPLASH_SCREEN=1",
+					"JUCE_PROJUCER_VERSION=0x70006",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_dsp=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"BasicTremolo\\\"",
+					"JucePlugin_Desc=\\\"BasicTremolo\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x50677376",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=BasicTremoloAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"BasicTremoloAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXIdentifier=com.yourcompany.BasicTremolo",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ BasicTremolo\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.BasicTremolo.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.BasicTremolo.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\"",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\"",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\"",
+					"/Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider",
+					"\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-VST3_Manifest_Helper.plist;
+				INFOPLIST_PREPROCESS = NO;
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "\"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_processors/format_types/VST3_SDK\" \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/VST_SDK\" $(SRCROOT)/../../JuceLibraryCode \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules\" /Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider \"/Users/mitchschneider_/Desktop/Code/Audio SDKs/JUCE/modules/juce_audio_plugin_client/AU\"";
+				OTHER_LDFLAGS = "-weak_framework Metal -weak_framework MetalKit";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.BasicTremolo;
+				PRODUCT_NAME = "juce_vst3_helper";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Release;
+		};
+		F0F686690C2B680CC7E3BB27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		005EDB34B99B15FE8A8943A4 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19CD2562F42A959DB53837B7,
+				7482757582C48BA21CC565E5,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0ED8EB462D872B639F696143 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7812E2AA13FAADB0304E126B,
+				9959A4D2700BAE939A085933,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		152394E2646004721F47FB8C = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC3B1B175DFE94B4CA8B05B,
+				69D2CEED8C5FD1D796B02A68,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		169E879934B1BA1D7F7C74DB = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C81225D6A56E106A115F61,
+				1C6BAEF7CA007FD83D3F6769,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A12BA45D9422C1A88669AD64 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				473FC907C9D7586CD602C03A,
+				63D39C51E47FED272B10E007,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B9157514E68911F6766C5A20 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05DB1A74E9BA4DBEF2E5C03F,
+				F0F686690C2B680CC7E3BB27,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E105348B6578F49BE42F6D11 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				750FB9810E08EEB539A2BB92,
+				9F23F9DCF68DA1B8A248FA3D,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A4B3D498679FA2BC41E4D62 /* Project object */;
+}
