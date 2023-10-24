@@ -22,6 +22,7 @@ BasicTremoloAudioProcessorEditor::BasicTremoloAudioProcessorEditor (BasicTremolo
     
     addAndMakeVisible(depth);
     std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(audioProcessor.treeState, "depthID", depth);
+        
 }
 
 BasicTremoloAudioProcessorEditor::~BasicTremoloAudioProcessorEditor()
@@ -36,6 +37,4 @@ void BasicTremoloAudioProcessorEditor::paint (juce::Graphics& g)
 
 void BasicTremoloAudioProcessorEditor::resized()
 {
-    // This is generally where you'll want to lay out the positions of any
-    // subcomponents in your editor..
 }

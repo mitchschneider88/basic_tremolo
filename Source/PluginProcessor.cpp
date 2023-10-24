@@ -39,7 +39,7 @@ juce::AudioProcessorValueTreeState::ParameterLayout BasicTremoloAudioProcessor::
     
     params.reserve(2);
     
-    juce::NormalisableRange<float> rateRange (1.f, 100.f, 0.1f, 1.f, false);
+    juce::NormalisableRange<float> rateRange (0.f, 10.f, 0.0001f, 1.f, false);
     params.push_back(std::make_unique<juce::AudioParameterFloat>("rateID", "rate", rateRange, 10.f));
     
     juce::NormalisableRange<float> depthRange (0.f, 1.f, 0.1f, 1.f, false);
@@ -52,15 +52,12 @@ void BasicTremoloAudioProcessor::parameterChanged(const juce::String &parameterI
 {
     if (parameterID == "rateID")
     {
-        params.frequency_Hz = newValue;
-        lfo.setParameters(params);
+        LFO.setLfoRateInHz(newValue);
     }
     
     if (parameterID == "depthID")
     {
-        DBG("setting amplitude to" + std::to_string(newValue));
-        params.amplitude = newValue;
-        lfo.setParameters(params);
+        LFO.setLfoDepth(newValue);
     }
 }
 
@@ -136,12 +133,10 @@ void BasicTremoloAudioProcessor::prepareToPlay (double sampleRate, int samplesPe
     gain.reset();
     gain.setGainLinear(1.f);
     
-    lfo.reset(sampleRate);
-    params.amplitude = treeState.getRawParameterValue("depthID")->load();
-    params.frequency_Hz = treeState.getRawParameterValue("rateID")->load();
-    params.waveform = generatorWaveform::kSin;
-    lfo.setParameters(params);
-    
+    LFO.resetLFO(sampleRate);
+    LFO.setLfoDepth(treeState.getRawParameterValue("depthID")->load());
+    LFO.setLfoRateInHz(treeState.getRawParameterValue("rateID")->load());
+    LFO.setLfoType(generatorWaveform::kSin);
     
 }
 
@@ -179,7 +174,6 @@ bool BasicTremoloAudioProcessor::isBusesLayoutSupported (const BusesLayout& layo
 
 void BasicTremoloAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juce::MidiBuffer& midiMessages)
 {
-    gain.setGainLinear(generateUnipolarMaxDownLFO(&lfo));
     
     juce::ScopedNoDenormals noDenormals;
     auto totalNumInputChannels  = getTotalNumInputChannels();
@@ -198,9 +192,8 @@ void BasicTremoloAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer,
         auto* xnR = buffer.getReadPointer(1);
         auto* ynR = buffer.getWritePointer(1);
         
-        ynL[sample] = xnL[sample] * gain.getGainLinear();
-        //DBG("left gain is" + std::to_string(gain.getGainLinear()));
-        ynR[sample] = xnR[sample] * gain.getGainLinear();
+        ynL[sample] = xnL[sample] * LFO.generateUnipolarMaxDownLFO();
+        ynR[sample] = xnR[sample] * LFO.generateUnipolarMaxDownQuadPhasePosLFO();
     }
 }
 
@@ -227,22 +220,6 @@ void BasicTremoloAudioProcessor::setStateInformation (const void* data, int size
 {
     // You should use this method to restore your parameters from this memory block,
     // whose contents will have been created by the getStateInformation() call.
-}
-
-float BasicTremoloAudioProcessor::generateUnipolarMaxDownLFO(LFO *_lfo)
-{
-    float maxValue = 1.0;
-    float minValue = 0.0;
-    float halfRange = (maxValue - minValue) / 2.0;
-    float midpoint = halfRange + minValue;
-    float offset = 1.0;
-    
-    float unipolarModValue = bipolarToUnipolar(_lfo->renderAudioOutput().normalOutput);
-    
-    float finalModValue = _lfo->getParameters().amplitude * (maxValue - (1.0 - unipolarModValue)*(maxValue - minValue)) - offset;
-    
-    return finalModValue;
-    
 }
 
 //==============================================================================

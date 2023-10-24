@@ -2,9 +2,11 @@
 
 <JUCERPROJECT id="PgsVtM" name="BasicTremolo" projectType="audioplug" useAppConfig="0"
               addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
-              headerPath="/Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider">
+              headerPath="/Users/mitchschneider_/Desktop/Code/C++/Learning/fxobjects_Schneider&#10;/Users/mitchschneider_/Desktop/Code/C++/Schneider_DSP">
   <MAINGROUP id="HGxR3n" name="BasicTremolo">
     <GROUP id="{7BB7DE8D-64D8-015F-25C9-19CF68BB472D}" name="Source">
+      <FILE id="kiMVHS" name="SchneiderLFO.cpp" compile="1" resource="0"
+            file="../../Schneider_DSP/SchneiderLFO.cpp"/>
       <FILE id="YSzMRG" name="filters_Schneider.h" compile="0" resource="0"
             file="../fxobjects_Schneider/filters_Schneider.h"/>
       <FILE id="wFIhRh" name="fxobjects_Schneider.cpp" compile="1" resource="0"

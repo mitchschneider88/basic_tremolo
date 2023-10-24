@@ -9,7 +9,8 @@
 #pragma once
 
 #include <JuceHeader.h>
-#include "fxobjects_Schneider.cpp"
+#include "SchneiderLFO.cpp"
+
 
 //==============================================================================
 /**
@@ -65,11 +66,10 @@ public:
     
 private:
     
-    OscillatorParameters params;
-    LFO lfo;
+
     juce::dsp::Gain<float> gain;
     juce::dsp::ProcessSpec spec;
-    SignalGenData lfoOutput;
+    SchneiderLFO LFO;
     
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (BasicTremoloAudioProcessor)
